@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hear_phone_store/pages/home_page.dart';
 import 'package:hear_phone_store/pages/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hear_phone_store/util/routs.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,8 +28,8 @@ class MyApp extends StatelessWidget {
 
       routes: {
         "/": (context) => LoginPage(),
-        "/login": (context) => LoginPage(),
-        "/home": (context) => HomePage(),
+        MyRouts.loginRout: (context) => LoginPage(),
+        MyRouts.homeRout: (context) => HomePage(),
       },
     );
   }
