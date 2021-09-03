@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:hear_phone_store/pages/widget/drawer.dart';
+import 'package:hear_phone_store/widget/drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    var scaffold = Scaffold(
       appBar: AppBar(
         title: Text('Head Phone store'),
       ),
@@ -17,5 +17,6 @@ class HomePage extends StatelessWidget {
       ),
       drawer: MyDrawer(),
     );
+    return scaffold;
   }
 }
