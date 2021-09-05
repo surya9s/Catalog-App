@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hear_phone_store/pages/home_page.dart';
 import 'package:hear_phone_store/pages/login_page.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:hear_phone_store/util/routs.dart';
 import 'package:hear_phone_store/widget/themes.dart';
 
