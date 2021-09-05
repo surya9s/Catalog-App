@@ -24,13 +24,12 @@
             "color": "#e0bfae",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMOMstwtmLnjFb3NHiDJ_kcQnueNVH-rv_3ps96HZmXlFumKWaiBqq_L4Uoyx3iFiNTrXNEbyB&usqp=CAc"
         },
-        {
-            "id": 4,
+        {"id": 4,
             "name": "Playstation 5",
             "desc": "Sony Playstation 5th generation",
             "price": 500,
             "color": "#544ee4",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMOMstwtmLnjFb3NHiDJ_kcQnueNVH-rv_3ps96HZmXlFumKWaiBqq_L4Uoyx3iFiNTrXNEbyB&usqp=CAc"
+            "image": "https://i1.wp.com/freepngimages.com/wp-content/uploads/2020/07/Playstation-5-games-console-transparent-background-png-image.png?fit=1000%2C1000"
         },
         {
             "id": 5,
@@ -63,6 +62,22 @@
             "price": 899,
             "color": "#7c95eb",
             "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBNHd7FwarbxA1xdMFt24KazjcR4dWPH_t_T5dz4YNK1s7rJAQ8gOIuR_NRw6eeiQgFhbZ9sAN&usqp=CAc"
+        },
+        {
+            "id": 7,
+            "name": "Surface Pro X",
+            "desc": " Microsoft Surface Pro X 2021 edition",
+            "price": 9999.99,
+            "color": "#1c1c1c",
+            "image": "https://www.theindianwire.com/wp-content/uploads/2020/10/primary-100819449-large-768x576.jpg"
+        },
+        {
+            "id": 8,
+            "name": "MatePad Pro",
+            "desc": "HUAWEI MatePad Pro 12.6-inch",
+            "price": 1439,
+            "color": "#7c95eb",
+            "image":"https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/tablets/matepad-pro-12-6/img/pc/huawei-matepad-pro-12.6-kv-pc-1.png"
         }
     ]
 }
