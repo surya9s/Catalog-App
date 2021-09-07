@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hear_phone_store/pages/cart_page.dart';
 import 'package:hear_phone_store/pages/home_page.dart';
 import 'package:hear_phone_store/pages/login_page.dart';
 import 'package:hear_phone_store/util/routs.dart';
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         "/": (context) => LoginPage(),
         MyRouts.loginRout: (context) => LoginPage(),
         MyRouts.homeRout: (context) => HomePage(),
+        MyRouts.cartRout: (context) => CartPage(),
       },
     );
   }

@@ -59,7 +59,7 @@ class CatalogItem extends StatelessWidget {
                       ElevatedButton(
                         onPressed: () {},
                         child: Text(
-                          "Buy",
+                          "Add to cart",
                           style: TextStyle(fontWeight: FontWeight.bold),
                         ),
                         style: ButtonStyle(

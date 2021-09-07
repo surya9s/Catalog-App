@@ -1,10 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hear_phone_store/modles/catlouge.dart';
+import 'package:hear_phone_store/util/routs.dart';
 import 'package:hear_phone_store/widget/home_widget/catalog_header.dart';
 import 'package:hear_phone_store/widget/home_widget/catalog_list.dart';
 import 'dart:convert';
-import 'package:velocity_x/velocity_x.dart';
 import 'package:hear_phone_store/widget/themes.dart';
 
 class HomePage extends StatefulWidget {
@@ -36,6 +37,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     var scaffold = Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: MyTheme.darkBluishColor,
+        onPressed: () {
+          Navigator.pushNamed(context, MyRouts.cartRout);
+        },
+        child: Icon(CupertinoIcons.cart),
+      ),
       backgroundColor: MyTheme.creamColor,
       body: SafeArea(
         child: Column(

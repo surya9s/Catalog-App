@@ -68,6 +68,10 @@ class HomeDetailPage extends StatelessWidget {
                     Text(
                       catalog.desc,
                     ),
+                    Text(
+                      "VelocityX lets you focus on your design, and it comes with various widget extensions to make it responsive across the devices. Go ahead and check the docs.",
+                      style: TextStyle(color: Colors.black54),
+                    ).p16(),
                   ],
                 ).py64(),
               ),
