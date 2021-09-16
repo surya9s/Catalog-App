@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 import '../themes.dart';
 
@@ -17,14 +18,15 @@ class CatalogHeader extends StatelessWidget {
             style: TextStyle(
                 fontSize: 36,
                 fontWeight: FontWeight.bold,
-                color: MyTheme.darkBluishColor),
+                color: Theme.of(context).accentColor),
           ),
           Text(
             'Trending Products',
             style: TextStyle(
-                fontSize: 18,
-                // fontWeight: FontWeight.bold,
-                color: MyTheme.darkBluishColor),
+              fontSize: 18,
+              // fontWeight: FontWeight.bold,
+              //color: Theme.of(context).buttonColor,
+            ),
           )
         ],
       ),

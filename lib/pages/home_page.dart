@@ -38,13 +38,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     var scaffold = Scaffold(
       floatingActionButton: FloatingActionButton(
-        backgroundColor: MyTheme.darkBluishColor,
+        backgroundColor: Theme.of(context).buttonColor,
         onPressed: () {
           Navigator.pushNamed(context, MyRouts.cartRout);
         },
-        child: Icon(CupertinoIcons.cart),
+        child: Icon(CupertinoIcons.cart, color: Colors.white),
       ),
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: Theme.of(context).canvasColor,
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

@@ -21,14 +21,16 @@ class CatalogItem extends StatelessWidget {
       width: 150,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: Colors.white,
+        color: Theme.of(context).cardColor,
       ),
       child: Row(
         children: [
-          Hero(
-            tag: Key(catalog.id.toString()),
-            child: CatlogImage(
-              image: catalog.image,
+          Container(
+            child: Hero(
+              tag: Key(catalog.id.toString()),
+              child: CatlogImage(
+                image: catalog.image,
+              ),
             ),
           ),
           Expanded(
@@ -41,9 +43,10 @@ class CatalogItem extends StatelessWidget {
                   Text(
                     catalog.name,
                     style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 17,
-                        color: MyTheme.darkBluishColor),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 17,
+                      color: Theme.of(context).accentColor,
+                    ),
                   ),
                   Text(
                     catalog.desc,
@@ -64,7 +67,7 @@ class CatalogItem extends StatelessWidget {
                         ),
                         style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(
-                                MyTheme.darkBluishColor),
+                                Theme.of(context).buttonColor),
                             shape: MaterialStateProperty.all(StadiumBorder())),
                       )
                     ],

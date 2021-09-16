@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:velocity_x/velocity_x.dart';
 
 class CatlogImage extends StatelessWidget {
   final String image;
@@ -11,8 +12,15 @@ class CatlogImage extends StatelessWidget {
       // height: 150,
       width: 150,
       margin: EdgeInsets.only(left: 8),
-      child: Image.network(image),
-      decoration: BoxDecoration(color: Colors.white),
+      child: Image.network(image)
+          .box
+          .rounded
+          .p8
+          .color(context.canvasColor)
+          .make()
+          .p4()
+          .w40(context),
+      //decoration: BoxDecoration(color: Colors.white),
     );
   }
 }

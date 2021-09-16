@@ -12,9 +12,9 @@ class HomeDetailPage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
       ),
-      backgroundColor: MyTheme.creamColor,
+      backgroundColor: Theme.of(context).canvasColor,
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: Theme.of(context).cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -31,7 +31,7 @@ class HomeDetailPage extends StatelessWidget {
               ),
               style: ButtonStyle(
                   backgroundColor:
-                      MaterialStateProperty.all(MyTheme.darkBluishColor),
+                      MaterialStateProperty.all(Theme.of(context).buttonColor),
                   shape: MaterialStateProperty.all(StadiumBorder())),
             ).wh(150, 45)
           ],
@@ -55,7 +55,7 @@ class HomeDetailPage extends StatelessWidget {
               edge: VxEdge.TOP,
               child: Container(
                 width: context.screenWidth,
-                color: Colors.white,
+                color: Theme.of(context).cardColor,
                 child: Column(
                   children: [
                     Text(
@@ -63,14 +63,14 @@ class HomeDetailPage extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 36,
-                          color: MyTheme.darkBluishColor),
+                          color: Theme.of(context).accentColor),
                     ),
                     Text(
                       catalog.desc,
                     ),
                     Text(
                       "VelocityX lets you focus on your design, and it comes with various widget extensions to make it responsive across the devices. Go ahead and check the docs.",
-                      style: TextStyle(color: Colors.black54),
+                      style: TextStyle(color: Theme.of(context).accentColor),
                     ).p16(),
                   ],
                 ).py64(),
