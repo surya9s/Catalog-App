@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hear_phone_store/widget/themes.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({Key? key}) : super(key: key);

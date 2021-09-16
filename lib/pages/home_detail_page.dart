@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hear_phone_store/modles/catlouge.dart';
-import 'package:hear_phone_store/widget/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class HomeDetailPage extends StatelessWidget {

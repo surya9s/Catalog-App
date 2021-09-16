@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:hear_phone_store/modles/catlouge.dart';
 import 'package:hear_phone_store/widget/home_widget/catalog_image.dart';
 
-import '../themes.dart';
-
 class CatalogItem extends StatelessWidget {
   const CatalogItem({Key? key, required this.catalog}) : super(key: key);
 
